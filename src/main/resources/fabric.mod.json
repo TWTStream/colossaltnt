@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "colossaltnt",
+  "version": "${version}",
+  "name": "Colossaltnt",
+  "description": "This mod is imilar to the TNT mod Tommyinnit used but for the 1.19 Fabric",
+  "authors": [
+    "TWT",
+    "Technowastaken"
+  ],
+  "contact": {
+    "website": "www.TWTWT.xyz"
+  },
+  "license": "MIT",
+  "icon": "assets/colossaltnt/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "xyz.twtwt.colossaltnt.client.ColossaltntClient"
+    ],
+    "main": [
+      "xyz.twtwt.colossaltnt.Colossaltnt"
+    ]
+  },
+  "mixins": [
+    "colossaltnt.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.8",
+    "fabric": "*",
+    "minecraft": "1.19"
+  }
+}
